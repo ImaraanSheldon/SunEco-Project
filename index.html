@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Style.css">
+	<title>HomePage</title>
+</head>
+<body>
+	<div class="gridParent1">
+
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="Logo/sunEcoLogo.png"></a>
+		</div>
+			<div class="search">
+  			<input type="text" placeholder="Search..">
+  				<span>
+  					<a href="#">
+							<img src="Images/Black_Search.png" style="width:30px; height:30px; padding: 12px 15px 0px 0px;">
+  					</a>
+  				</span>
+			</div>
+		<div class="socials">
+			<span>
+				<p class="font">Find Us On:</p>
+			</span>
+			<span>
+				<img src="Images/Twitter.png">
+			</span>
+			<span>
+				<img src="Images/tiktok.png" style="width:38px; height:38px;">
+			</span>
+			<span>
+				<img src="Images/Instagram.png">
+			</span>
+		</div>
+	</div>
+
+	<div class="nav">
+		<ul>
+			<li class="list">
+				<a href="index.html">
+					<span class="icon">
+						<img src="Images/homeIcon.png">
+					</span>
+					<span class="txt">Home</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="PricingPage.html">
+				<span class="icon">
+					<img src="Images/pricingIcon.png">
+				</span>
+				<span class="txt">Pricing</span>
+					</a>
+			</li>
+			<li class="list">
+				<a href="AboutUs.html">
+					<span class="icon">
+						<img src="Images/aboutUsIcon.png">
+					</span>
+					<span class="txt">About Us</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="Gallery.html">
+					<span class="icon">
+						<img src="Images/galleryIcon.png">
+					</span>
+					<span class="txt">Gallery</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="ContactUs.html">
+					<span class="icon">
+						<img src="Images/contactUsIcon.png">
+					</span>
+					<span class="txt">Contact Us</span>
+				</a>
+			</li>
+			<div class="indicator"></div>
+		</ul>
+	</div>
+
+	<div class="Hero">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div>
+  				<a href="PricingPage.html" class="btnFindOut">Find a Flight</a>
+    		</div>
+ 	    		<img src="Images/Hero.jpeg" style="width:100%;height: 450px;">
+  			<div class="text fontHero">Have Fun<br/>In The<br/> Sun<br/>With<br/> Sun<br/> Eco Travels</br></div>
+			</div>
+
+			<div class="mySlides fade">
+    		<div class="rel">
+  	    	<a href="PricingPage.html" class="btnFindOut">Find a Flight.</a>
+    		</div>
+  				<img src="Images/Hero1.jpeg" style="width:100%; height:450px;">
+    		<div class="text fontHero">Have Fun<br/>In The<br/> Sun<br/>With<br/> Sun<br/> Eco</div>
+			</div>
+
+			<div class="mySlides fade">
+    		<div>
+    			<a href="PricingPage.html" class="btnFindOut">Find a Flight.</a>
+    		</div>
+  				<img src="Images/Petra.jpg" style="width:100%; height:450px;">
+    				<div class="text fontHero">Have Fun<br/>In The<br/> Sun<br/>With<br/> Sun<br/> Eco</div>
+			</div>
+
+			<div class="mySlides fade">
+    		<div>
+  				<a href="PricingPage.html" class="btnFindOut">Find a Flight.</a>    	
+    		</div>
+  				<img src="Images/waterfrontCpt.jpeg" style="width:100%; height:450px;">
+    		<div class="text fontHero">Have Fun<br/>In The<br/> Sun<br/>With<br/> Sun<br/> Eco</div>
+		</div>
+	</div>
+
+		<br>
+
+		<div style="text-align:center">
+  		<span class="dot"></span> 
+  		<span class="dot"></span> 
+  		<span class="dot"></span> 
+  		<span class="dot"></span> 
+		</div>
+
+		<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+ 		let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 7000); // Change image every 7 seconds
+    }
+	  </script>
+
+	<div class="div1">
+		<div class="div1cont1">
+			<img src="Images/PierCpt.jpeg">
+		</div>
+		<div class="div1cont2">
+			<h1 class="font">Helping You See The World:</h1>
+			<br>
+			<p>As a traveling agency our goal is to help people discover and experience the world you live in. It's beauty and awe is yours to discover, with us and we'll help you do just that.<br> Whether you're traveling from San Fransisco, America to Melbourne, Autralia, or Cape Town, South Africa to Istanbul, Turkey. We'll make your travel as pleasent and comfortable as coming home from a hard day of work just to feel the embrace of your couch<br><br></p>
+			<p style="text-align:left; padding-left: 150px;">To learn More:</p>
+			<span>
+				<a href="AboutUs.html">About Us</a>
+			</span>
+		</div>
+	</div>
+		
+	<div class="flexContent1">
+
+		<div class="contentHeaderHome1 font">
+			<h1 style="text-align:center">Africa &nbsp;</h1>
+		</div>
+		<div class="contentHeaderHome1 font">
+			<h1 style="text-align:center;">Asia &nbsp;</h1>
+		</div>
+		<div class="contentHeaderHome1 font">
+			<h1 style="text-align:center;">The Americas &nbsp;</h1>
+		</div>
+
+		<div class="contentHome1">
+			<div class="slideshow">
+
+    		<div class="d1"><img src="Images/PierCpt.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d2"><img src="Images/marrakeshMorroco.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d3"><img src="Images/blueCityChefchaouen.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d4"><img src="Images/naiagraFalls.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d5"><img src="Images/canyonNamibia.jpeg" style="width:100%; height:100%;"></div>
+			</div>
+		</div>
+		<div class="contentHome1">
+			<div class="slideshow">
+
+    		<div class="d6"><img src="Images/greatWallOfChina.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d7"><img src="Images/renaiDistrictTaiwan.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d8"><img src="Images/cathedralRussia.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d9"><img src="Images/osakaJapan.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d10"><img src="Images/newDehli.jpeg" style="width:100%; height:100%;"></div>
+			</div>
+		</div>
+		<div class="contentHome1">
+			<div class="slideshow">
+
+    		<div class="d11"><img src="Images/indianaopilis.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d12"><img src="Images/Indianapolis2.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d13"><img src="Images/rioDeJaneroBrazil.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d14"><img src="Images/pueblaMexico.jpeg" style="width:100%; height:100%;"></div>
+    		<div class="d15"><img src="Images/buenosAresArgentina.jpeg" style="width:100%; height:100%;"></div>
+			</div>
+		</div>
+		<div class="contentHomeTxt1 font">
+			<p>Africa's beauty is a diverse and captivating tapestry of stunning landscapes, rich cultural heritage, and a wealth of unique flora and fauna. Its landscapes range from lush rainforests to vast deserts, and its wildlife includes iconic species like elephants and lions. The continent's vibrant cultures and traditions, along with its warm and welcoming people, contribute to its enchanting beauty. Africa's history, art, and music further enhance its allure, making it a truly remarkable and captivating place.</p>
+		</div>
+		<div class="contentHomeTxt1 font">
+			<p>Asia's beauty is a multifaceted tapestry that combines ancient traditions, breathtaking landscapes, and a rich cultural mosaic. From the serene beauty of the Himalayan mountains to the bustling metropolises like Tokyo and Mumbai, Asia offers a diverse range of experiences. Its cultural richness is evident in its historic temples, palaces, and art forms like calligraphy and martial arts. Asia's culinary traditions, from sushi in Japan to curry in India, add a flavorful dimension to its allure. With a deep sense of history, spirituality, and natural splendor, Asia's beauty is both timeless and enchanting.</p>
+		</div>
+		<div class="contentHomeTxt1 font">
+			<p>The beauty of the Americas as a continent is characterized by its vast and diverse landscapes, from lush rainforests to rugged mountains, picturesque coastlines, and iconic natural wonders. Its cultural richness, shaped by indigenous heritage and a blend of traditions, adds depth to its allure. Moreover, the continent's promise of opportunity and freedom has attracted people from around the world, making it a land of endless possibilities. In essence, the Americas' beauty lies in its stunning geography, cultural mosaic, and the spirit of aspiration and innovation that defines it.</p>
+		</div>
+	</div>
+	<hr/>
+	<div class="footer">
+		<span class="logo2">
+				<a href="#"><img src="Logo/sunEcoLogo.png"></a>
+				<p class="font sun1">Sun Eco Travels</p>
+		</span>
+		<div class="footbox1">
+			<p class="sun2 font">Make the right Travel-driven decisions to put the <br/><span style="font-weight: bold;"><a href="HomePage.html" class="sun0">Sun Eco</a></span>, in your life.</p>
+			<p class="sun3">|</p>
+			<p class="sun4">|</p>
+			<p class="sun5">|</p>
+			<p class="sun6">|</p>
+			<ul class="sun7 font">
+				<li style="font-weight:bold;"> Quick Links:</li>
+				<li>
+					<a href="Gallery.html">Gallery</a>
+				</li>
+				<li>
+					<a href="AboutUs.html">About Us</a>
+				</li>
+				<li>
+					<a href="PricingPage.html">Bookings</a>
+				</li>
+			</ul>
+			<ul class="sun8 font">
+				<li style="font-weight:bold;"> A reason to Talk?</li>
+				<li>
+					<a href="ContactUs.html">Jobs</a>
+				</li>
+				<li>
+					<a href="ContactUs.html">Complaints</a>
+				</li>
+				<li>
+					<a href="ContactUs.html">Comments</a>
+				</li>
+			</ul>
+			<ul class="sun9 font">
+				<li style="font-weight:bold;"> Lets Chat!</li>
+				<li>
+					<a href="https://Twitter.com">Twitter.com</a>
+				</li>
+				<li>
+					<a href="#">TikTok.com</a>
+				</li>
+				<li>
+					<a href="https://Instagram.com">Instagram.com</a>
+				</li>
+			</ul>
+			<a href="AboutUs.html" class="sun10 font">Terms & Conditions</a>
+			<ap class="sun11 font">Copyright&copy; 2023 Sun Eco Travels</p>
+
+		</div>
+		<div class="footbox2"></div>
+	</div>
+
+</div>
+</body>
+</html>

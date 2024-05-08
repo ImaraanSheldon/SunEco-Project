@@ -1,0 +1,1086 @@
+body{
+	min-width:100vw;
+	overflow-x: hidden;
+	max-height: auto;
+	margin:auto;
+	background-color: whitesmoke;
+	/*background-image: url('Images/bodyBg.jpg');*/
+}
+hr{
+	height: 3px;
+	background-color: #e10052;
+}
+.font{
+	font-family: corbel;
+}
+.font h1{
+	color: black;
+}
+.fontHero{
+	font-weight: 950;
+	font-family: verdana;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px black;
+	opacity: 75%;
+}
+/*#Grid Parent for every page*/
+.gridParent1{
+	display:grid;
+	grid-template-column:repeat(6, 1fr);
+	margin:auto;
+}
+
+/*Universal Code Start
+contains header, navigation, hero and footer.
+they function similar toa site master
+
+*/
+.header{
+	grid-column: 1/-1;
+	position: relative;
+	height: 100px;
+	background-color: #e96969;
+	background-image: linear-gradient(to bottom, #969696, whitesmoke);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 20px;
+}
+.logo a img{
+	width:75px;
+	height:75px;
+	position: absolute;
+	left: 48%;
+	bottom: 12.5%;
+}
+.search {
+  overflow: hidden;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  top:25%;
+  left: 10px;
+}
+.search input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: 1px solid black ;
+  font-size: 17px;
+}
+.socials{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:5px;
+	padding-right:10px ;
+}
+.socials span img{
+	width:25px;
+	height:25px;
+}
+
+@media screen and (max-width: 600px) {
+  .search input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .search input[type=text] {
+    border: 1px solid black;  
+  }
+}
+
+.nav{
+	grid-column-start:1;
+	grid-column-end: -1;
+
+	margin-bottom: 0.25em;
+	height: 105px;
+	background-color: whitesmoke;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.nav ul{
+	display: flex;
+	width:80%;
+}
+.nav ul li{
+	position: relative;
+	list-style: none;
+	z-index: 1;
+	width:20%;
+	height:70px;
+}
+.nav ul li a{
+	position: relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width:100%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+.nav ul li a .icon{
+	position: relative;
+	display: block;
+	line-height: 80px;
+	font-size:1.5em;
+	text-align: center;
+	transition: 0.5s;
+	colour:#000000;
+}
+.nav ul li:hover a .icon{
+	transform: translateY(-35px);
+}
+.nav ul li a .txt{
+	position: absolute;
+	color: #000000;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	font-size:0.75em;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+
+.nav ul li:hover a .txt{
+	opacity: 1;
+	transform: translateY(10px);
+}
+
+.icon img{
+	width:1em;
+	height:1em;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:'Poppins',sans-serif;
+}
+.footer{
+	width:100%;
+	height:200px;
+	margin: auto;
+	background-color: #969696;
+	position: relative;
+	display:grid;
+	margin-top: 1em;
+	grid-template-column:repeat(6, 1fr);
+}
+.footbox1{
+	grid-column: 1/4;
+	height:200px;
+	background-color: #e10052;
+	background-image: linear-gradient(to top, #e10052, #969696);
+	display: flex;
+	flex-flow: column nowrap;
+}
+.footbox2{
+	grid-column: 4/7;
+	height:200px;
+	background-color: #e10052;
+	background-image: linear-gradient(to top, #e10052, #969696);
+	flex-flow: row wrap;
+
+}
+.logo2 a img{
+	width:75px;
+	height:75px;
+	position: absolute;
+	left: 3em;
+	top:1em;
+}
+.sun1{
+	text-decoration: none;
+	position: absolute;
+	left: 7em;
+	top:1em;
+	font-size: 20px;
+	font-weight: bold;
+	draggable:false;
+}
+.sun2{
+	text-decoration: none;
+	position: absolute;
+	left: 3em;
+	top:4.5em;
+	font-size: 18px;
+	draggable:false;
+}
+.sun3{
+	text-decoration: none;
+	position: absolute;
+	left: 7em;
+	top:0;
+	font-size: 64px;
+	draggable:false;
+}
+.sun4{
+	text-decoration: none;
+	position: absolute;
+	left: 11em;
+	top:0;
+	font-size: 64px;
+	draggable:false;
+}
+.sun5{
+	text-decoration: none;
+	position: absolute;
+	left: 15em;
+	top:0;
+	font-size: 64px;
+	draggable:false;
+}
+.sun6{
+	text-decoration: none;
+	position: absolute;
+	left: 19em;
+	top:0;
+	font-size: 64px;
+	draggable:false;
+}
+.sun7{
+	text-decoration: none;
+	position: absolute;
+	left: 30em;
+	top:0;
+	draggable:false;
+}
+.sun7 li{
+	font-size: 20px;
+	list-style: none;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+.sun7 li a{
+	font-size: 16px;
+	text-decoration: none;
+	color:black;
+}
+.sun7 li a:hover{
+	color: white;
+}
+.sun8{
+	text-decoration: none;
+	position: absolute;
+	left: 45em;
+	top:0;
+	draggable:false;
+}
+.sun8 li{
+	font-size: 20px;
+	list-style: none;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+.sun8 li a{
+	font-size: 16px;
+	text-decoration: none;
+	color:black;
+}
+.sun8 li a:hover{
+	color: white;
+}
+.sun9{
+	text-decoration: none;
+	position: absolute;
+	left: 62em;
+	top:0;
+	draggable:false;
+}
+.sun9 li{
+	font-size: 20px;
+	list-style: none;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+.sun9 li a{
+	font-size: 16px;
+	text-decoration: none;
+	color:black;
+}
+.sun9 li a:hover{
+	color: white;
+}
+.sun10{
+	text-decoration: none;
+	position: absolute;
+	left: 3em;
+	bottom:10px;
+	font-size: 16px;
+	color: black;
+	padding: 3px;
+	border-radius: 1px;
+	draggable:false;
+	font-weight: bold;
+}
+.sun10:hover{
+	color: white;
+}
+.sun11{
+	text-decoration: none;
+	position: absolute;
+	right: 1.5em;
+	bottom:-10px;
+	font-size: 16px;
+	color: black;
+	border-radius: 1px;
+	draggable:false;
+}
+.sun0{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.sun0:hover{
+	color: white;
+}
+
+/*Universal code end*/
+
+/*HomePage filler content*/
+.Hero{
+	grid-column: 1/-1;
+	height:450px;
+	background-color: transparent;
+}
+/*slideshow start*/
+.slideshow
+-container {
+  max-width: 1263px;
+  height: 450px;
+  position: relative;
+  margin: auto;
+  margin-bottom:10px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Caption text */
+.rel{
+	display: relative;
+}
+.text {
+  color: #f2f2f2;
+  font-size:3rem;
+  padding: 8px 12px;
+  position: absolute;
+  top:200px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Button Code*/
+.bgColor{
+	background-color: #e10052;
+	width:50px;
+	height:1em;
+}
+.btnFindOut {
+  color: #f2f2f2;
+  font-size: 1em;
+  display:inline-block;
+  background-color: whitesmoke;
+  color:black;
+  border:solid 0.25em #969696 ;
+  padding: 8px 12px;
+  position: absolute;
+  top: 580px;
+  left:150px;
+  z-index:100;
+  transition: 0.5s ease-in-out;
+}
+.btnFindOut:hover{
+	transition: 0.5s ease-in;
+	background-color: #e10052;
+	color: #969696;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #e10052;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) {
+  .text {font-size: 11px}
+}
+/*that 2 side ting wit the words and decriptions and stuff
+div1 = Big container...is a flex parent
+divcont1 & 2 = 1 is LHS, 2 is RHS
+Images And Text TO be assessed...
+*/
+.div1{
+	display: flex;
+	justify-content: flex-start;
+	gap: 1em;
+	width: 90%;
+	padding: 1em;
+	margin: auto;
+	height: auto;
+	background-color: transparent;
+	margin-top:1em ;
+	margin-bottom:1em ;
+	border: solid 5px #969696;
+}
+.div1cont1{
+	width:55%;
+	height:400px;
+	background-color: gray;
+}
+.div1cont1 img{
+	width: 100%;
+	height: 100%;
+}
+.div1cont2{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	width:45%;
+	height:400px;
+	background-color: #969696;
+	background-image: linear-gradient(whitesmoke, #969696 80%, whitesmoke);
+}
+.div1cont2 h1{
+	color: black;
+	text-align: center;
+}
+.div1cont2 p{
+	color: black;
+	text-align: center;
+	padding: 1em;
+}
+.div1cont2 span a {
+	position: absolute;
+	right: 160px;
+	bottom: 33px;
+	color: #f2f2f2;
+    font-size: 1em;
+    display:inline-block;
+    background-color: whitesmoke;
+    color:black;
+    border:solid 0.1em #E10052;
+    padding: 8px 12px;
+    z-index:100;
+    transition: 0.5s ease-in-out;
+}
+.div1cont2 span a:hover{
+	transition: 0.5s ease-in;
+	background-color: #e10052;
+	color: #969696;
+}
+/*Them Three mad text box tings at the bottom
+contentHeaderHome1 = Content headers
+contentHome1 = 3 boxes containing the slideshows
+contentText = beneath each slideshow is a description
+*/
+.flexContent1{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	width:90%;
+	height:780px;
+	margin:auto;
+	margin-top:1em;
+	border: solid 5px #969696;
+	margin-bottom: 1em;
+}
+.contentHeaderHome1{
+	width:30%;
+	height:75px;
+	background-color: transparent;
+	font-weight: bold;
+	margin: auto;
+	border-radius: 5px;
+}
+.contentHome1{
+	width:30%;
+	height:400px;
+	background-color: #e10052;
+	margin: auto;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.slideshow,.slideshow::after{
+    position:relative;
+    width:100%;
+    height: 400px;
+    margin:auto;
+    background-color:transparent;
+}
+.slideshow div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: black;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s;
+}
+
+.slideshow .d1 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 0s;
+}
+.slideshow .d2 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 6s;
+}
+.slideshow .d3 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 12s;
+}
+.slideshow .d4 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 18s;
+}
+.slideshow .d5 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 24s;
+}
+.slideshow .d6 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 1s;
+}
+.slideshow .d7 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 7s;
+}
+.slideshow .d8 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 13s;
+}
+.slideshow .d9 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 19s;
+}
+.slideshow .d10 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 25s;
+}
+.slideshow .d11 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 2s;
+}
+.slideshow .d12 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 8s;
+}
+.slideshow .d13 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 14s;
+}
+.slideshow .d14 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 20s;
+}
+.slideshow .d15 {
+    overflow:hidden;
+    margin:auto;
+    background-color:black;
+    animation-delay: 26s;
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+	0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+.no-cssanimations .cb-slideshow div {
+    opacity: 1;
+}
+.contentHomeTxt1{
+	width:30%;
+	height:280px;
+	background-color: transparent;
+	margin: auto;
+	padding-bottom: 10px;
+	overflow: hidden;
+	text-align: center;
+}
+/*Pricing Page starts here
+
+
+
+*/
+.centerPiece{
+	grid-column: 1/-1;
+	height:600px;
+	background-co
+	lor: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.centerPiece span img{
+	width: 1263px;
+	height: 600px;
+}
+.centerOpacityBox{
+	width: 30%;
+	height: 500px;
+	opacity: 50%;
+	background-color: #e10052;
+	position: absolute;
+	right: 60px;
+	top: 16px;
+
+}
+
+.contentPrice{
+	grid-column: 1/-1;
+	height:600px;
+	background-color: transparent;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	position: relative;
+}
+.contentBackFiller{
+	width:900px;
+	height: 350px;
+	background-color: #969696;
+	margin: 1em;
+	z-index: 1;
+}
+.contentInfoBox1{
+	width:350px;
+	height: 400px;
+	background-color: #e10052;
+	position: absolute;
+	left: 4em;
+	top: 100px;
+	z-index: 2;
+	transition: transform 0.4s ease-in-out;
+}
+.contentInfoBox1:hover{
+	transform: translateY(-75px);
+}
+.contentInfoBox1 img{
+	width: 95%;
+	height: 80%;
+	transform: translate(12.5%,8%);
+	transition: transform 0.4s ease-in-out;
+}
+.contentInfoBox1 img:hover{
+	transform: translate(3%,5%);
+}
+
+.contentInfoBox2{
+	width:550px;
+	height: 300px;
+	background-color: #e10052;
+	position: absolute;
+	right: 6em;
+	bottom: 4em;
+	z-index: 2;
+	transition: transform 0.35s ease-in-out;
+}
+.contentInfoBox2:hover{
+	transform: translateX(-45px);
+}
+.contentInfoBox2 img{
+	width: 95%;
+	height: 80%;
+	transform: translate(12.5%,8%);
+	transition: transform 0.4s ease-in-out;
+}
+.contentInfoBox2 img:hover{
+	transform: translate(3%,5%);
+}
+.contentRegisterBox{
+	width:550px;
+	height: 250px;
+	background-color: #e10052;
+	position: absolute;
+	right: 9em;
+	top: -60px;
+	z-index: 2;
+	transition: transform 0.35s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-flow: row wrap
+}
+.contentRegisterBox:hover{
+    transform: translateX(45px);
+}
+.contentRegisterBoxContent{
+	width: 40%;
+	height: 25%;
+	background-color: #e10052;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+.contentRegisterBoxContent span h2{
+	position: absolute;
+	font-size: 1em;
+	left: 4px;
+	top: -10px;
+}
+.searchDestination {
+  overflow: hidden;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  bottom: 4px;
+  left: 6.25%;
+}
+.searchDestination input[type=text] {
+  padding: 2px;
+  margin-right: 8px;
+  border: 1px solid black ;
+  font-size: 0.5em;
+  width: 150px;
+  height: 20px;
+}
+.searchDestination input[type=date] {
+  padding: 2px;
+  margin-right: 8px;
+  border: 1px solid black ;
+  font-size: 0.5em;
+  width: 150px;
+  height: 20px;
+}
+.btnPluh{
+	padding: 10px 15px;
+	background-color: whitesmoke;
+	border-radius: 3px;
+	transform: translateY(25%);
+	text-decoration: none;
+	border: solid 1px black;
+}
+/*About Us page code. consisting mostly of flex...funny enough.
+
+
+
+*/
+.centerPiece2{
+	grid-column: 1/-1;
+	height:600px;
+	background-color: #969696;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	background-image: url('Images/parisDeMuse.jpg');
+	background-size:100% 100% ;
+	background-repeat: no-repeat;
+}
+.contentAbout1{
+	grid-column: 1/-1;
+	height: 450px;
+	background-color: #969696;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+.contentAbout1Box1{
+	width: 400px;
+	height: 400px;
+	background-color: #e10052;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contentAbout1Box2{
+	width: 800px;
+	height: 400px;
+	background-color: whitesmoke;
+	text-align: center;
+}
+.contentAbout2{
+	grid-column: 1/-1;
+	height: 450px;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+.contentAbout2Box1{
+	width: 600px;
+	height: 400px;
+	background-color: #e10052;
+	text-align: center;
+}
+.contentAbout2Box2{
+	width: 600px;
+	height: 400px;
+	background-color: #e10052;
+	text-align: center;
+}
+/*Contact Us...Yaayyy more search bars
+
+
+
+*/
+.centerPiece3{
+	grid-column: 1/-1;
+	height:600px;
+	background-color: #e10052;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	background-image: url('Images/parisDeMuse.jpg');
+	background-size:100% 100% ;
+	background-repeat: no-repeat;
+}
+.head{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+}
+.contactGrid{
+	grid-column: 1/-1;
+	height: auto;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	grid-gap: 3em;
+}
+.contactImg{
+	width: 600px;
+	height: 700px;
+	background-color: #e10052;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contactImg img{
+	width: 98%;
+	height: 98%;
+}
+.contactInfo{
+	width: 500px;
+	height: 600px;
+	background-color: #969696;
+	background-image: linear-gradient(to top, #969696, white);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	border: solid 5px #e10052;
+}
+.contactInfoBox{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.contactInfoBox1{
+	width: 40%;
+	height: 10%;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.align{
+	font-size: 16px;
+	font-weight: bold;
+}
+.writespace{
+	width: 400px;
+}
+textarea{
+	height: 60px;
+	width: 400px;
+}
+/*Final Boss Gallery...I'm tired
+
+
+
+*/
+.africaGrid{
+	grid-column: 1/-1;
+	height:auto;
+	background-color: transparent;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.africaIntro{
+	width:90%;
+	height:400px;
+	background-color: #969696;
+	overflow: hidden;
+	box-shadow: 5px 5px #e10052;
+	margin-bottom: 10px;
+}
+.africaIntro p{
+	font-size: 15px;
+	text-align: center;
+}
+.africaHero{
+	width: 100%;
+	height: 550px;
+	background-color: red;
+	overflow: hidden;
+}
+.africaHero img{
+	width: 100%;
+	height: 100%;
+}
+.africaView{
+	width: 100%;
+	height: 500px;
+	background-color: #969696;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	gap: 5px;
+}
+.africaViewC1A{
+	grid-column: 1/2;
+	grid-row: 1/3;
+	background-color: brown;
+}
+.africaViewC2A{
+	grid-column: 2/3;
+	grid-row: 1/4;
+	background-color: brown;
+}
+.africaViewC3A{
+	grid-column: 3/4;
+	grid-row: 1/3;
+	background-color: brown;
+}
+.africaViewC4A{
+	grid-column: 4/5;
+	grid-row: 1/5;
+	background-color: brown;
+}
+.africaViewC1B{
+	grid-column: 1/2;
+	grid-row: 3/7;
+	background-color: brown;
+}
+.africaViewC2B{
+	grid-column: 2/3;
+	grid-row: 4/7;
+	background-color: brown;
+}
+.africaViewC3B{
+	grid-column: 3/4;
+	grid-row: 3/7;
+	background-color: brown;
+}
+.africaViewC4B{
+	grid-column: 4/5;
+	grid-row: 5/7;
+	background-color: brown;
+}
+.africaTravel{
+	width: 20%;
+	height: 200px;
+	margin: 2%;
+	background-color: transparent;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	border: solid 2px #969696;
+	box-shadow: 2px 2px #e10052;
+}
+.africaTravel img{
+	width: 100%;
+	height: 88%;
+}
+.africaTravel p{
+	position: absolute;
+	color: black;
+	text-align: left;
+	font-size: 1em;
+	bottom: -13px;
+	left: 0px;
+}
